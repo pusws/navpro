@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WebNav Hub - 现代化的网址导航站，融合Neumorphism设计风格" />
+  <meta name="keywords" content="网址导航,AI工具,开发工具,在线工具,导航站" />
+  <meta name="author" content="WebNav Hub" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://webnav-hub.com/" />
+  <meta property="og:title" content="WebNav Hub - 现代化网址导航站" />
+  <meta property="og:description" content="精选优质网站和在线工具，助力提升工作效率" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="WebNav Hub - 现代化网址导航站" />
+  <meta property="twitter:description" content="精选优质网站和在线工具，助力提升工作效率" />
+
+  <title>WebNav Hub - 现代化网址导航站</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            'xs': '360px',
+          },
+          colors: {
+            primary: '#ff9000',
+            'primary-hover': '#e67e22',
+            'primary-light': '#ffb84d',
+            'primary-dark': '#cc7400',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'Arial', 'sans-serif'],
+          },
+          spacing: {
+            '18': '4.5rem',
+            '88': '22rem',
+          },
+          maxWidth: {
+            '8xl': '88rem',
+          }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/neumorphism.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- JSON-LD 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "WebNav Hub",
+    "description": "现代化的网址导航站，精选优质网站和在线工具",
+    "url": "https://webnav-hub.com"
+  }
+  </script>
+</head>
+
+<body class="font-sans antialiased">
+  <!-- 加载动画 -->
+  <div id="loading-screen" class="fixed inset-0 z-50 flex items-center justify-center"
+    style="background: var(--bg-primary);">
+    <div class="neuro-card p-8 text-center">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+      <p class="text-text-secondary">加载中...</p>
+    </div>
+  </div>
+
+  <!-- 主容器 -->
+  <div class="min-h-screen" style="background: var(--bg-primary); color: var(--text-primary);">
+
+    <!-- 页头 -->
+    <header class="neuro-panel text-center py-8 mb-4">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-2" style="color: var(--primary-color);">
+          WEBNAV HUB
+        </h1>
+        <p class="text-lg opacity-80" style="color: var(--text-secondary);">
+          现代化的网址导航站
+        </p>
+      </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav class="neuro-nav sticky top-4 z-40 mx-4 mb-6 rounded-3xl">
+      <div class="container mx-auto px-4">
+        <ul class="flex flex-wrap justify-center items-center gap-2 py-2">
+          <li><a href="#ai-search" class="neuro-nav-item">AI搜索</a></li>
+          <li><a href="#social" class="neuro-nav-item">社交媒体</a></li>
+          <li><a href="#tools" class="neuro-nav-item">实用工具</a></li>
+          <li><a href="#tech-news" class="neuro-nav-item">科技资讯</a></li>
+          <li><a href="#cloud-storage" class="neuro-nav-item">云存储</a></li>
+          <li><a href="#email" class="neuro-nav-item">电子邮箱</a></li>
+          <li>
+            <button class="neuro-button theme-toggle w-10 h-10 rounded-full flex items-center justify-center">
+              <i class="fas fa-moon theme-icon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 pb-16">
+
+      <!-- AI搜索分类 -->
+      <section id="ai-search" class="category-section mb-12 animate-on-scroll">
+        <h2 class="category-title text-2xl font-bold mb-6 flex items-center" style="color: var(--primary-color);">
+          <i class="fas fa-robot mr-3"></i>
+          AI搜索
+        </h2>
+        <div class="link-grid grid grid-auto-fit gap-4">
+          <!-- 链接卡片将通过JavaScript动态生成 -->
+        </div>
+      </section>
+
+      <!-- 社交媒体分类 -->
+      <section id="social" class="category-section mb-12 animate-on-scroll">
+        <h2 class="category-title text-2xl font-bold mb-6 flex items-center" style="color: var(--primary-color);">
+          <i class="fas fa-users mr-3"></i>
+          社交媒体
+        </h2>
+        <div class="link-grid grid grid-auto-fit gap-4">
+          <!-- 链接卡片将通过JavaScript动态生成 -->
+        </div>
+      </section>
+
+      <!-- 实用工具分类 -->
+      <section id="tools" class="category-section mb-12 animate-on-scroll">
+        <h2 class="category-title text-2xl font-bold mb-6 flex items-center" style="color: var(--primary-color);">
+          <i class="fas fa-tools mr-3"></i>
+          实用工具
+        </h2>
+        <div class="link-grid grid grid-auto-fit gap-4">
+          <!-- 链接卡片将通过JavaScript动态生成 -->
+        </div>
+      </section>
+
+      <!-- 科技资讯分类 -->
+      <section id="tech-news" class="category-section mb-12 animate-on-scroll">
+        <h2 class="category-title text-2xl font-bold mb-6 flex items-center" style="color: var(--primary-color);">
+          <i class="fas fa-newspaper mr-3"></i>
+          科技资讯
+        </h2>
+        <div class="link-grid grid grid-auto-fit gap-4">
+          <!-- 链接卡片将通过JavaScript动态生成 -->
+        </div>
+      </section>
+
+      <!-- 云存储分类 -->
+      <section id="cloud-storage" class="category-section mb-12 animate-on-scroll">
+        <h2 class="category-title text-2xl font-bold mb-6 flex items-center" style="color: var(--primary-color);">
+          <i class="fas fa-cloud mr-3"></i>
+          云存储
+        </h2>
+        <div class="link-grid grid grid-auto-fit gap-4">
+          <!-- 链接卡片将通过JavaScript动态生成 -->
+        </div>
+      </section>
+
+      <!-- 电子邮箱分类 -->
+      <section id="email" class="category-section mb-12 animate-on-scroll">
+        <h2 class="category-title text-2xl font-bold mb-6 flex items-center" style="color: var(--primary-color);">
+          <i class="fas fa-envelope mr-3"></i>
+          电子邮箱
+        </h2>
+        <div class="link-grid grid grid-auto-fit gap-4">
+          <!-- 链接卡片将通过JavaScript动态生成 -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="neuro-panel text-center py-8 mt-16">
+      <div class="container mx-auto px-4">
+        <p class="mb-4" style="color: var(--text-secondary);">
+          © 2025 WebNav Hub. 保留所有权利。
+        </p>
+        <nav class="flex justify-center space-x-6">
+          <a href="#" class="hover:text-primary transition-colors" style="color: var(--text-muted);">隐私政策</a>
+          <a href="#" class="hover:text-primary transition-colors" style="color: var(--text-muted);">使用条款</a>
+          <a href="#" class="hover:text-primary transition-colors" style="color: var(--text-muted);">联系我们</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript 模块 -->
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="data/links.js"></script>
+
+  <!-- 主脚本 -->
+  <script>
+    // 应用初始化
+    document.addEventListener('DOMContentLoaded', function () {
+      // 隐藏加载动画
+      setTimeout(() => {
+        const loadingScreen = document.getElementById('loading-screen');
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => {
+          loadingScreen.style.display = 'none';
+        }, 300);
+      }, 500);
+
+      // 初始化主题管理器
+      const themeManager = initThemeManager();
+
+      // 初始化导航管理器
+      const navigationManager = initNavigationManager();
+
+      // 初始化动画管理器
+      const animationManager = initAnimationManager();
+
+      // 创建返回顶部按钮
+      createBackToTopButton();
+
+      // 渲染链接数据
+      if (window.navigationData) {
+        renderLinks(window.navigationData);
+      }
+
+      console.log('WebNav Hub 初始化完成!');
+    });
+
+    // 渲染链接卡片
+    function renderLinks(data) {
+      data.categories.forEach(category => {
+        const section = document.getElementById(category.id);
+        if (section) {
+          const grid = section.querySelector('.link-grid');
+          if (grid) {
+            grid.innerHTML = category.links.map(link => createLinkCard(link)).join('');
+          }
+        }
+      });
+    }
+
+    // 创建链接卡片HTML
+    function createLinkCard(link) {
+      return `
+        <div class="neuro-card p-4 text-center relative overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 min-h-[90px] flex flex-col items-center justify-center">
+          <a href="${link.url}" target="_blank" class="absolute inset-0 z-10"></a>
+          <i class="${link.icon} text-2xl mb-2 relative z-5" style="color: var(--primary-color);"></i>
+          <h3 class="text-sm font-medium relative z-5 line-clamp-2" style="color: var(--text-primary);">
+            ${link.title}
+          </h3>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+
+</html>

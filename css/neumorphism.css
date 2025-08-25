@@ -1,0 +1,270 @@
+/* ====================================
+   Neumorphism 设计系统
+   ==================================== */
+
+/* ========== 基础 Neumorphic 样式 ========== */
+.neuro-base {
+    background: var(--bg-card);
+    border-radius: var(--neuro-radius);
+    transition: all var(--transition-normal);
+}
+
+/* ========== Neumorphic 卡片 ========== */
+.neuro-card {
+    background: var(--bg-card);
+    border-radius: var(--neuro-radius);
+    box-shadow:
+        var(--neuro-distance) var(--neuro-distance) var(--neuro-blur) var(--shadow-dark),
+        calc(-1 * var(--neuro-distance)) calc(-1 * var(--neuro-distance)) var(--neuro-blur) var(--shadow-light);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.neuro-card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        calc(var(--neuro-distance) * 1.5) calc(var(--neuro-distance) * 1.5) calc(var(--neuro-blur) * 1.2) var(--shadow-dark),
+        calc(-1.5 * var(--neuro-distance)) calc(-1.5 * var(--neuro-distance)) calc(var(--neuro-blur) * 1.2) var(--shadow-light);
+}
+
+/* ========== Neumorphic 按钮 ========== */
+.neuro-button {
+    background: var(--bg-card);
+    border: none;
+    border-radius: calc(var(--neuro-radius) * 0.6);
+    box-shadow:
+        calc(var(--neuro-distance) * 0.5) calc(var(--neuro-distance) * 0.5) calc(var(--neuro-blur) * 0.5) var(--shadow-dark),
+        calc(-0.5 * var(--neuro-distance)) calc(-0.5 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.5) var(--shadow-light);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    outline: none;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.neuro-button:hover {
+    background: var(--bg-primary);
+    box-shadow:
+        calc(var(--neuro-distance) * 0.7) calc(var(--neuro-distance) * 0.7) calc(var(--neuro-blur) * 0.7) var(--shadow-dark),
+        calc(-0.7 * var(--neuro-distance)) calc(-0.7 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.7) var(--shadow-light);
+}
+
+.neuro-button:active {
+    background: var(--bg-secondary);
+    box-shadow:
+        inset calc(var(--neuro-distance) * 0.3) calc(var(--neuro-distance) * 0.3) calc(var(--neuro-blur) * 0.3) var(--shadow-dark),
+        inset calc(-0.3 * var(--neuro-distance)) calc(-0.3 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.3) var(--shadow-light);
+    transform: translateY(1px);
+}
+
+/* ========== Neumorphic 输入框 ========== */
+.neuro-input {
+    background: var(--bg-card);
+    border: none;
+    border-radius: calc(var(--neuro-radius) * 0.6);
+    box-shadow:
+        inset calc(var(--neuro-distance) * 0.3) calc(var(--neuro-distance) * 0.3) calc(var(--neuro-blur) * 0.3) var(--shadow-dark),
+        inset calc(-0.3 * var(--neuro-distance)) calc(-0.3 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.3) var(--shadow-light);
+    padding: var(--space-md) var(--space-lg);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all var(--transition-normal);
+    outline: none;
+    width: 100%;
+}
+
+.neuro-input:focus {
+    box-shadow:
+        inset calc(var(--neuro-distance) * 0.5) calc(var(--neuro-distance) * 0.5) calc(var(--neuro-blur) * 0.5) var(--shadow-dark),
+        inset calc(-0.5 * var(--neuro-distance)) calc(-0.5 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.5) var(--shadow-light),
+        0 0 0 2px var(--primary-color);
+}
+
+.neuro-input::placeholder {
+    color: var(--text-muted);
+}
+
+/* ========== Neumorphic 导航 ========== */
+.neuro-nav {
+    background: var(--bg-card);
+    border-radius: calc(var(--neuro-radius) * 1.5);
+    box-shadow:
+        calc(var(--neuro-distance) * 0.5) calc(var(--neuro-distance) * 0.5) calc(var(--neuro-blur) * 0.8) var(--shadow-dark),
+        calc(-0.5 * var(--neuro-distance)) calc(-0.5 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.8) var(--shadow-light);
+    padding: var(--space-sm);
+}
+
+.neuro-nav-item {
+    background: transparent;
+    border: none;
+    border-radius: calc(var(--neuro-radius) * 0.8);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-weight: 500;
+    padding: var(--space-sm) var(--space-lg);
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.neuro-nav-item:hover {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    box-shadow:
+        calc(var(--neuro-distance) * 0.3) calc(var(--neuro-distance) * 0.3) calc(var(--neuro-blur) * 0.4) var(--shadow-dark),
+        calc(-0.3 * var(--neuro-distance)) calc(-0.3 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.4) var(--shadow-light);
+}
+
+.neuro-nav-item.active {
+    background: var(--primary-color);
+    color: #000;
+    box-shadow:
+        inset calc(var(--neuro-distance) * 0.2) calc(var(--neuro-distance) * 0.2) calc(var(--neuro-blur) * 0.3) rgba(0, 0, 0, 0.2),
+        inset calc(-0.2 * var(--neuro-distance)) calc(-0.2 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.3) rgba(255, 255, 255, 0.1);
+}
+
+/* ========== Neumorphic 面板 ========== */
+.neuro-panel {
+    background: var(--bg-card);
+    border-radius: var(--neuro-radius);
+    box-shadow:
+        calc(var(--neuro-distance) * 0.8) calc(var(--neuro-distance) * 0.8) calc(var(--neuro-blur) * 1.2) var(--shadow-dark),
+        calc(-0.8 * var(--neuro-distance)) calc(-0.8 * var(--neuro-distance)) calc(var(--neuro-blur) * 1.2) var(--shadow-light);
+    padding: var(--space-xl);
+    margin: var(--space-lg);
+}
+
+/* ========== Neumorphic 开关 ========== */
+.neuro-toggle {
+    background: var(--bg-card);
+    border-radius: calc(var(--neuro-radius) * 1.5);
+    box-shadow:
+        inset calc(var(--neuro-distance) * 0.3) calc(var(--neuro-distance) * 0.3) calc(var(--neuro-blur) * 0.4) var(--shadow-dark),
+        inset calc(-0.3 * var(--neuro-distance)) calc(-0.3 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.4) var(--shadow-light);
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    transition: all var(--transition-normal);
+    width: 48px;
+}
+
+.neuro-toggle-ball {
+    background: var(--bg-card);
+    border-radius: 50%;
+    box-shadow:
+        calc(var(--neuro-distance) * 0.2) calc(var(--neuro-distance) * 0.2) calc(var(--neuro-blur) * 0.3) var(--shadow-dark),
+        calc(-0.2 * var(--neuro-distance)) calc(-0.2 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.3) var(--shadow-light);
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: all var(--transition-normal);
+    width: 20px;
+}
+
+.neuro-toggle.active {
+    background: var(--primary-color);
+}
+
+.neuro-toggle.active .neuro-toggle-ball {
+    transform: translateX(24px);
+}
+
+/* ========== 主题切换按钮特殊样式 ========== */
+.theme-toggle {
+    z-index: 10;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    flex-shrink: 0;
+    box-shadow:
+        calc(var(--neuro-distance) * 0.3) calc(var(--neuro-distance) * 0.3) calc(var(--neuro-blur) * 0.4) var(--shadow-dark),
+        calc(-0.3 * var(--neuro-distance)) calc(-0.3 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.4) var(--shadow-light);
+}
+
+.theme-toggle:hover {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow:
+        calc(var(--neuro-distance) * 0.5) calc(var(--neuro-distance) * 0.5) calc(var(--neuro-blur) * 0.6) var(--shadow-dark),
+        calc(-0.5 * var(--neuro-distance)) calc(-0.5 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.6) var(--shadow-light);
+}
+
+.theme-toggle:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow:
+        inset calc(var(--neuro-distance) * 0.2) calc(var(--neuro-distance) * 0.2) calc(var(--neuro-blur) * 0.3) var(--shadow-dark),
+        inset calc(-0.2 * var(--neuro-distance)) calc(-0.2 * var(--neuro-distance)) calc(var(--neuro-blur) * 0.3) var(--shadow-light);
+}
+
+.theme-toggle .theme-icon {
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+}
+
+.theme-toggle:hover .theme-icon {
+    color: var(--primary-color);
+    transform: rotate(15deg);
+}
+
+/* 在小屏幕上调整大小 */
+@media (max-width: 768px) {
+    .theme-toggle {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .theme-toggle .theme-icon {
+        font-size: 0.875rem;
+    }
+}
+
+/* ========== 特殊效果 ========== */
+.neuro-glow {
+    position: relative;
+}
+
+.neuro-glow::before {
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+    border-radius: inherit;
+    content: '';
+    filter: blur(var(--space-sm));
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity var(--transition-normal);
+    width: 100%;
+    z-index: -1;
+}
+
+.neuro-glow:hover::before {
+    opacity: 0.3;
+}
+
+/* ========== 响应式调整 ========== */
+@media (max-width: 768px) {
+    :root {
+        --neuro-distance: 15px;
+        --neuro-blur: 25px;
+        --neuro-radius: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --neuro-distance: 12px;
+        --neuro-blur: 20px;
+        --neuro-radius: 12px;
+    }
+}
