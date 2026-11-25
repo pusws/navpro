@@ -21,6 +21,7 @@
 - **Tailwind CSS** - 构建期编译为静态 CSS（`npm run build:css`），不再运行 CDN 编译器
 - **模块化设计** - 功能模块化，易于维护和扩展
 - **性能优化** - 轻量级，快速加载
+- **现代 Web 实践** - 开发阶段按 [Modern Web Guidance](https://github.com/GoogleChrome/modern-web-guidance) 审计，详见 [🧭 Modern Web Guidance](#-modern-web-guidance)
 
 ## 🗂️ 项目结构
 
@@ -100,6 +101,45 @@ http://localhost:8000
 | 电子邮箱 | 8    | 邮箱服务、隐私邮箱             |
 
 **总计：196 个精选网站**
+
+## 🧭 Modern Web Guidance
+
+开发阶段引入了 [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance)。它把现代 Web 平台的最佳实践与浏览器兼容信息以「技能」形式提供给编码代理，避免继续沿用旧写法；同样可以检索到具体的代码模式、注意事项与降级方案。
+
+它是**开发期工具**，不进入构建产物、也不在浏览器中运行——页面本身依旧是纯 HTML/CSS/JavaScript。
+
+### 使用方式
+
+```bash
+# 安装技能（供代理按需调用）
+npx modern-web-guidance@latest install
+
+# 先按场景检索，再取回完整指南
+npx modern-web-guidance@latest search "color contrast for text on dark theme"
+npx modern-web-guidance@latest retrieve color
+
+# 扫描仓库里可现代化的旧写法
+npx modern-web-guidance@latest legacy-scan .
+```
+
+### 已采纳的建议
+
+| 指南 | 落地改动 |
+| --- | --- |
+| `performance` | Tailwind 由运行时 CDN 编译器改为构建期静态 CSS（407 KB → 6.9 KB）；外部脚本加 `defer`，并用 `preconnect` 预连接 CDN |
+| `secure-external-subresources` | Font Awesome 样式表加 `integrity`（sha384）、`crossorigin="anonymous"`、`referrerpolicy="no-referrer"`，并补充 `<meta name="referrer">` |
+| `security` / `privacy` | `netlify.toml`、`vercel.json` 增加 CSP、`Permissions-Policy`、`frame-ancestors 'none'`，移除已废弃的 `X-XSS-Protection` |
+| `dark-mode-toggle` | `legacy-scan` 指出主题覆盖必须同步 `color-scheme`；结论已记录，改动留待后续版本 |
+
+### 暂未采纳的建议
+
+以下建议会改变现有配色、动效或导航高亮时机，当前以「页面外观不变」为约束，先记录不落地：
+
+- `dark-mode-toggle`：改用 `<meta name="color-scheme">` + `light-dark()` 承载主题，去掉首屏闪色
+- `scrollspy`：用原生 `scroll-target-group` / `:target-current` 替代 JS 计算当前段落
+- `color` / `motion` / `accessibility`：对比度修正、逐属性收敛 `prefers-reduced-motion`、`:focus-visible` 焦点环、跳转主内容链接等
+
+不引入新依赖、也不影响部署方式：这些指南只作用于开发流程，构建与运行仍是 `npm run build:css` + 静态托管。
 
 ## 🎯 功能演示
 
@@ -448,6 +488,12 @@ firebase deploy
 - **缓存策略** - 本地存储用户设置
 
 ## 📈 更新日志
+
+### v2.3.0 (2026-11-25)
+- 🧭 引入 Modern Web Guidance 作为开发期最佳实践指南
+- ⚡ Tailwind 改为构建期编译为静态 CSS，移除运行时 CDN 编译器
+- 🔐 外部样式表启用 SRI，部署配置补充 CSP 等安全头
+- 🖼️ 页面外观与交互保持不变
 
 ### v2.1.0 (2025-08-26)
 - ✨ 移除搜索功能，专注核心导航体验
