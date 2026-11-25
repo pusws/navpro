@@ -96,12 +96,9 @@
     <!-- 页头 -->
     <header class="neuro-panel text-center py-8 mb-4">
       <div class="container mx-auto px-4">
-        <h1 class="text-4xl md:text-5xl font-bold mb-2" style="color: var(--primary-color);">
+        <h1 class="text-4xl md:text-5xl font-bold" style="color: var(--primary-color);">
           WEBNAV HUB
         </h1>
-        <p class="text-lg opacity-80" style="color: var(--text-secondary);">
-          现代化的网址导航站
-        </p>
       </div>
     </header>
 
@@ -199,7 +196,7 @@
     <footer class="neuro-panel text-center py-8 mt-16">
       <div class="container mx-auto px-4">
         <p class="mb-4" style="color: var(--text-secondary);">
-          © 2025 WebNav Hub. 保留所有权利。
+          © <span id="current-year">2026</span> WebNav Hub. 保留所有权利。
         </p>
         <nav class="flex justify-center space-x-6">
           <a href="#" class="hover:text-primary transition-colors" style="color: var(--text-muted);">隐私政策</a>
@@ -240,6 +237,12 @@
 
       // 创建返回顶部按钮
       createBackToTopButton();
+
+      // 动态更新页脚年份
+      const yearElement = document.getElementById('current-year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
 
       // 渲染链接数据
       if (window.navigationData) {
