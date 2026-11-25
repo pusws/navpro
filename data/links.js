@@ -7,1396 +7,1239 @@ const navigationData = {
     metadata: {
         title: "WebNav Hub",
         description: "现代化的网址导航站，融合Neumorphism设计风格",
-        version: "2.0.0",
-        lastUpdated: "2025-08-26",
-        totalLinks: 200,
+        version: "2.2.0",
+        lastUpdated: "2026-11-25",
+        totalLinks: 196,
         totalCategories: 6
     },
 
     categories: [
         {
             id: "ai-search",
-            title: "AI搜索",
+            title: "Ai搜索",
             icon: "fas fa-robot",
-            description: "AI工具和搜索引擎",
+            description: "AI 工具与智能搜索",
             links: [
                 {
-                    id: "google",
-                    title: "Google",
-                    url: "https://www.google.com",
-                    icon: "fa-brands fa-google",
-                    description: "全球最大的搜索引擎",
-                    tags: ["搜索", "引擎"]
+                    id: "chatglm-cn",
+                    title: "智谱清言",
+                    url: "https://chatglm.cn/",
+                    icon: "fa-solid fa-comment-dots"
                 },
                 {
-                    id: "unlimited-ai",
-                    title: "无限制AI",
-                    url: "https://unlimitedai.chat/",
-                    icon: "fa-solid fa-pepper-hot",
-                    description: "无限制AI聊天工具",
-                    tags: ["AI", "聊天"]
+                    id: "mimo-xiaomi-com",
+                    title: "mimo小米AI",
+                    url: "https://mimo.xiaomi.com/",
+                    icon: "fa-solid fa-mobile-retro"
                 },
                 {
-                    id: "openrouter",
-                    title: "OpenRouter",
+                    id: "openrouter-ai",
+                    title: "openrouter",
                     url: "https://openrouter.ai/",
-                    icon: "fa-brands fa-openid",
-                    description: "AI模型路由平台",
-                    tags: ["AI", "API"]
+                    icon: "fa-brands fa-openid"
                 },
                 {
-                    id: "websim",
-                    title: "WebSim",
-                    url: "https://websim.ai/",
-                    icon: "fa-solid fa-magnifying-glass",
-                    description: "AI网站生成工具",
-                    tags: ["AI", "网站生成"]
+                    id: "qianwen-com",
+                    title: "千问国内版",
+                    url: "https://www.qianwen.com/",
+                    icon: "fa-solid fa-magnifying-glass"
                 },
                 {
-                    id: "chatgpt",
-                    title: "ChatGPT",
+                    id: "chatgpt-com",
+                    title: "chatgpt",
                     url: "https://chatgpt.com/",
-                    icon: "fa-brands fa-google",
-                    description: "OpenAI的对话AI",
-                    tags: ["AI", "聊天"]
+                    icon: "fa-brands fa-google"
                 },
                 {
-                    id: "doubao",
-                    title: "傻豆包",
+                    id: "doubao-com",
+                    title: "豆包",
                     url: "https://www.doubao.com/chat/",
-                    icon: "fa-solid fa-paw",
-                    description: "字节跳动的AI助手",
-                    tags: ["AI", "聊天"]
+                    icon: "fa-solid fa-paw"
                 },
                 {
-                    id: "coze",
+                    id: "space-coze-cn",
                     title: "扣子空间",
                     url: "https://space.coze.cn/",
-                    icon: "fa-solid fa-shuttle-space",
-                    description: "AI应用开发平台",
-                    tags: ["AI", "开发"]
+                    icon: "fa-solid fa-shuttle-space"
                 },
                 {
-                    id: "qwen",
+                    id: "chat-qwen-ai",
                     title: "通义千问",
                     url: "https://chat.qwen.ai/",
-                    icon: "fa-brands fa-rocketchat",
-                    description: "阿里巴巴的AI助手",
-                    tags: ["AI", "聊天"]
+                    icon: "fa-brands fa-rocketchat"
                 },
                 {
-                    id: "kimi",
-                    title: "Kimi",
+                    id: "kimi-moonshot-cn",
+                    title: "kimi",
                     url: "https://kimi.moonshot.cn/",
-                    icon: "fa-regular fa-moon",
-                    description: "Moonshot AI的对话助手",
-                    tags: ["AI", "聊天"]
+                    icon: "fa-regular fa-moon"
                 },
                 {
-                    id: "yiyan",
+                    id: "yiyan-baidu-com",
                     title: "文心一言",
                     url: "https://yiyan.baidu.com/",
-                    icon: "fa-solid fa-dumpster-fire",
-                    description: "百度的AI助手",
-                    tags: ["AI", "聊天"]
+                    icon: "fa-solid fa-dumpster-fire"
                 },
                 {
-                    id: "yuanbao",
-                    title: "腾讯元宝",
-                    url: "https://yuanbao.tencent.com/",
-                    icon: "fa-solid fa-robot",
-                    description: "腾讯的AI助手",
-                    tags: ["AI", "聊天"]
+                    id: "hunyuan-tencent-com",
+                    title: "腾讯混元",
+                    url: "https://hunyuan.tencent.com/",
+                    icon: "fa-solid fa-robot"
                 },
                 {
-                    id: "minimax",
-                    title: "MiniMax",
+                    id: "minimax-io",
+                    title: "minimax",
                     url: "https://www.minimax.io/",
-                    icon: "fa-solid fa-minimize",
-                    description: "MiniMax AI平台",
-                    tags: ["AI", "平台"]
+                    icon: "fa-solid fa-minimize"
                 },
                 {
-                    id: "z-ai",
-                    title: "Z.AI",
+                    id: "chat-z-ai",
+                    title: "z.ai",
                     url: "https://chat.z.ai/",
-                    icon: "fa-solid fa-z",
-                    description: "Z.AI聊天平台",
-                    tags: ["AI", "聊天"]
+                    icon: "fa-solid fa-z"
                 },
                 {
-                    id: "google-aistudio",
-                    title: "Google AI Studio",
+                    id: "aistudio-google-com",
+                    title: "google AIstudio",
                     url: "https://aistudio.google.com/",
-                    icon: "fa-solid fa-robot",
-                    description: "Google AI开发工具",
-                    tags: ["AI", "开发"]
+                    icon: "fa-solid fa-robot"
                 },
                 {
-                    id: "gemini",
-                    title: "Gemini",
+                    id: "gemini-google-com",
+                    title: "gemini",
                     url: "https://gemini.google.com/",
-                    icon: "fa-brands fa-google-plus",
-                    description: "Google的AI助手",
-                    tags: ["AI", "聊天"]
+                    icon: "fa-brands fa-google-plus"
                 },
                 {
                     id: "labs-google",
-                    title: "Labs.Google",
-                    url: "https://labs.google/fx/zh",
-                    icon: "fa-brands fa-google-plus",
-                    description: "Google实验室",
-                    tags: ["AI", "实验"]
+                    title: "labs.google",
+                    url: "https://labs.google/",
+                    icon: "fa-brands fa-google-plus"
                 },
                 {
-                    id: "jules-google",
-                    title: "Jules.Google",
+                    id: "jules-google-com",
+                    title: "jules.google",
                     url: "https://jules.google.com/",
-                    icon: "fa-brands fa-google-plus",
-                    description: "Google Jules",
-                    tags: ["AI", "工具"]
+                    icon: "fa-brands fa-google-plus"
                 },
                 {
-                    id: "copilot",
-                    title: "Copilot",
+                    id: "stitch-withgoogle-com",
+                    title: "stitch.withgoogle",
+                    url: "https://stitch.withgoogle.com/",
+                    icon: "fa-brands fa-square-google-plus"
+                },
+                {
+                    id: "copilot-microsoft-com",
+                    title: "copilot",
                     url: "https://copilot.microsoft.com/",
-                    icon: "fa-brands fa-windows",
-                    description: "微软的AI助手",
-                    tags: ["AI", "聊天"]
+                    icon: "fa-brands fa-windows"
                 },
                 {
-                    id: "nvidia",
-                    title: "NVIDIA",
+                    id: "build-nvidia-com",
+                    title: "nvidia",
                     url: "https://build.nvidia.com/",
-                    icon: "fa-solid fa-microchip",
-                    description: "NVIDIA AI开发平台",
-                    tags: ["AI", "开发"]
+                    icon: "fa-solid fa-microchip"
                 },
                 {
-                    id: "claude",
-                    title: "Claude",
-                    url: "https://claude.ai/",
-                    icon: "fa-solid fa-robot",
-                    description: "Anthropic的AI助手",
-                    tags: ["AI", "聊天"]
+                    id: "yuanbao-tencent-com",
+                    title: "腾讯元宝",
+                    url: "https://yuanbao.tencent.com/",
+                    icon: "fa-solid fa-robot"
+                },
+                {
+                    id: "firecrawl-dev",
+                    title: "firecrawl",
+                    url: "https://www.firecrawl.dev/",
+                    icon: "fa-solid fa-robot"
+                },
+                {
+                    id: "mistral-ai",
+                    title: "mistral",
+                    url: "https://mistral.ai/",
+                    icon: "fa-solid fa-brain"
+                },
+                {
+                    id: "groq-com",
+                    title: "groq",
+                    url: "https://groq.com/",
+                    icon: "fa-solid fa-group-arrows-rotate"
+                },
+                {
+                    id: "skills-sh",
+                    title: "skills",
+                    url: "https://www.skills.sh/",
+                    icon: "fa-solid fa-key"
+                },
+                {
+                    id: "ollama-com",
+                    title: "ollama",
+                    url: "https://ollama.com/",
+                    icon: "fa-brands fa-rocketchat"
+                },
+                {
+                    id: "zenmux-ai",
+                    title: "zenmux",
+                    url: "https://zenmux.ai/",
+                    icon: "fa-solid fa-mask"
                 },
                 {
                     id: "chutes-ai",
-                    title: "Chutes AI",
-                    url: "https://chat.chutes.ai/",
-                    icon: "fa-solid fa-robot",
-                    description: "Chutes AI聊天平台",
-                    tags: ["AI", "聊天"]
-                },
-                {
-                    id: "mistral",
-                    title: "Mistral",
-                    url: "https://mistral.ai/",
-                    icon: "fa-solid fa-brain",
-                    description: "Mistral AI平台",
-                    tags: ["AI", "平台"]
-                },
-                {
-                    id: "groq",
-                    title: "Groq",
-                    url: "https://groq.com/",
-                    icon: "fa-solid fa-group-arrows-rotate",
-                    description: "Groq AI推理平台",
-                    tags: ["AI", "推理"]
-                },
-                {
-                    id: "medscape",
-                    title: "Medscape",
-                    url: "https://www.medscape.com/",
-                    icon: "fa-solid fa-stethoscope",
-                    description: "医学资讯和教育平台",
-                    tags: ["医学", "教育"]
-                },
-                {
-                    id: "heck-ai",
-                    title: "Heck.AI",
-                    url: "https://heck.ai/",
-                    icon: "fa-brands fa-rocketchat",
-                    description: "AI聊天和工具平台",
-                    tags: ["AI", "聊天"]
-                },
-                {
-                    id: "wenxiaobai",
-                    title: "问小白",
-                    url: "https://www.wenxiaobai.com/",
-                    icon: "fa-solid fa-mask",
-                    description: "AI问答助手",
-                    tags: ["AI", "问答"]
-                },
-                {
-                    id: "chutes-ai-main",
-                    title: "Chutes.AI",
+                    title: "chutes.ai",
                     url: "https://chutes.ai/",
-                    icon: "fa-solid fa-chalkboard",
-                    description: "AI教育和演示平台",
-                    tags: ["AI", "教育"]
+                    icon: "fa-solid fa-chalkboard"
                 },
                 {
-                    id: "huggingface",
-                    title: "HuggingFace",
+                    id: "huggingface-co",
+                    title: "huggingface",
                     url: "https://huggingface.co/",
-                    icon: "fa-solid fa-face-rolling-eyes",
-                    description: "AI模型和数据集平台",
-                    tags: ["AI", "模型"]
+                    icon: "fa-solid fa-face-rolling-eyes"
                 },
                 {
-                    id: "lmarena",
-                    title: "LMArena",
+                    id: "lmarena-ai",
+                    title: "lmarena",
                     url: "https://lmarena.ai/",
-                    icon: "fa-solid fa-robot",
-                    description: "大语言模型竞技场",
-                    tags: ["AI", "评测"]
+                    icon: "fa-solid fa-robot"
                 },
                 {
-                    id: "anyrouter",
-                    title: "AnyRouter",
-                    url: "https://anyrouter.top/",
-                    icon: "fa-solid fa-robot",
-                    description: "AI模型路由服务",
-                    tags: ["AI", "路由"]
+                    id: "is-agentic-com",
+                    title: "is-agentic",
+                    url: "https://is-agentic.com/",
+                    icon: "fa-solid fa-robot"
                 },
                 {
-                    id: "x-ai",
-                    title: "X.AI",
-                    url: "https://x.ai/",
-                    icon: "fa-brands fa-x-twitter",
-                    description: "xAI平台",
-                    tags: ["AI", "平台"]
+                    id: "freeinference-org",
+                    title: "freeinference",
+                    url: "https://freeinference.org/",
+                    icon: "fa-brands fa-codepen"
                 },
                 {
-                    id: "pce-calculator",
-                    title: "PCE计算",
-                    url: "https://ascvdpce.186404.xyz/",
-                    icon: "fa-solid fa-heart-pulse",
-                    description: "心血管风险计算器",
-                    tags: ["医学", "计算器"]
+                    id: "grok-com",
+                    title: "grok",
+                    url: "https://grok.com/",
+                    icon: "fa-brands fa-x-twitter"
                 },
                 {
-                    id: "t3-chat",
-                    title: "T3.Chat",
-                    url: "https://t3.chat/",
-                    icon: "fa-brands fa-rocketchat",
-                    description: "AI聊天平台",
-                    tags: ["AI", "聊天"]
+                    id: "instabox-sh",
+                    title: "instabox",
+                    url: "https://instabox.sh/",
+                    icon: "fa-solid fa-box"
                 },
                 {
-                    id: "v0",
-                    title: "V0",
+                    id: "agnes-ai-com",
+                    title: "agnes-ai",
+                    url: "https://agnes-ai.com/",
+                    icon: "fa-solid fa-code"
+                },
+                {
+                    id: "v0-dev",
+                    title: "v0",
                     url: "https://v0.dev/",
-                    icon: "fa-solid fa-v",
-                    description: "Vercel的AI界面生成工具",
-                    tags: ["AI", "界面生成"]
+                    icon: "fa-solid fa-v"
                 },
                 {
-                    id: "deepseek",
-                    title: "DeepSeek",
+                    id: "duck-ai",
+                    title: "Duck.ai",
+                    url: "https://duck.ai/",
+                    icon: "fa-solid fa-dove"
+                },
+                {
+                    id: "deepseek-com",
+                    title: "deepseek",
                     url: "https://www.deepseek.com/",
-                    icon: "fa-brands fa-rocketchat",
-                    description: "DeepSeek AI平台",
-                    tags: ["AI", "平台"]
+                    icon: "fa-brands fa-rocketchat"
                 },
                 {
-                    id: "dangbei-ai",
-                    title: "当贝AI",
-                    url: "https://ai.dangbei.com/",
-                    icon: "fa-brands fa-rocketchat",
-                    description: "当贝AI智能助手",
-                    tags: ["AI", "聊天"]
+                    id: "ying-baichuan-ai-com",
+                    title: "百小应医疗大模型",
+                    url: "https://ying.baichuan-ai.com/",
+                    icon: "fa-brands fa-rocketchat"
                 },
                 {
                     id: "genspark-ai",
-                    title: "GenSpark.AI",
+                    title: "genspark.ai",
                     url: "https://www.genspark.ai/",
-                    icon: "fa-brands fa-rocketchat",
-                    description: "AI搜索和生成平台",
-                    tags: ["AI", "搜索"]
+                    icon: "fa-brands fa-rocketchat"
                 },
                 {
-                    id: "firebase-google",
-                    title: "Firebase.Google",
+                    id: "firebase-google-com",
+                    title: "firebase.google",
                     url: "https://firebase.google.com/",
-                    icon: "fa-solid fa-code-branch",
-                    description: "Google应用开发平台",
-                    tags: ["开发", "云服务"]
+                    icon: "fa-solid fa-code-branch"
                 },
                 {
-                    id: "kiro-dev",
-                    title: "Kiro.dev",
-                    url: "https://kiro.dev/",
-                    icon: "fa-brands fa-rocketchat",
-                    description: "开发者工具平台",
-                    tags: ["开发", "工具"]
+                    id: "flow-google-com",
+                    title: "Google Flow",
+                    url: "https://flow.google.com/",
+                    icon: "fa-brands fa-google-plus"
                 },
                 {
-                    id: "sigmachat",
-                    title: "SigmaChat",
-                    url: "https://sigmabrowser.com/chat",
-                    icon: "fa-brands fa-rocketchat",
-                    description: "Sigma浏览器AI聊天",
-                    tags: ["AI", "聊天"]
+                    id: "404s-design",
+                    title: "404s.design",
+                    url: "https://www.404s.design/",
+                    icon: "fa-solid fa-code"
                 },
                 {
-                    id: "siliconflow",
+                    id: "streamlake-ai",
+                    title: "streamlake.ai",
+                    url: "https://www.streamlake.ai/",
+                    icon: "fa-solid fa-code"
+                },
+                {
+                    id: "freebuff-com",
+                    title: "freebuff",
+                    url: "https://freebuff.com/",
+                    icon: "fa-solid fa-robot"
+                },
+                {
+                    id: "ampcode-com",
+                    title: "ampcode",
+                    url: "https://ampcode.com/",
+                    icon: "fa-solid fa-code"
+                },
+                {
+                    id: "deepai-org",
+                    title: "DeepAI",
+                    url: "https://deepai.org/",
+                    icon: "fa-solid fa-brain"
+                },
+                {
+                    id: "siliconflow-cn",
                     title: "硅基流动",
                     url: "https://siliconflow.cn/",
-                    icon: "fa-brands fa-confluence",
-                    description: "AI云计算平台",
-                    tags: ["AI", "云计算"]
+                    icon: "fa-brands fa-confluence"
                 },
                 {
-                    id: "modelscope",
+                    id: "modelscope-cn",
                     title: "魔塔社区",
                     url: "https://www.modelscope.cn/",
-                    icon: "fa-solid fa-code-branch",
-                    description: "AI模型开源社区",
-                    tags: ["AI", "开源"]
+                    icon: "fa-solid fa-code-branch"
                 },
                 {
-                    id: "readdy-ai",
-                    title: "Readdy",
-                    url: "https://readdy.ai/",
-                    icon: "fa-solid fa-bolt",
-                    description: "AI阅读助手",
-                    tags: ["AI", "阅读"]
+                    id: "maas-xfyun-cn",
+                    title: "讯飞星辰MaaS",
+                    url: "https://maas.xfyun.cn/",
+                    icon: "fa-solid fa-bolt"
+                },
+                {
+                    id: "youmind-com",
+                    title: "youmind",
+                    url: "https://youmind.com/",
+                    icon: "fa-solid fa-camera"
+                },
+                {
+                    id: "lovart-ai",
+                    title: "lovart",
+                    url: "https://www.lovart.ai/zh/home",
+                    icon: "fa-solid fa-file-image"
                 },
                 {
                     id: "bolt-new",
-                    title: "Bolt.new",
+                    title: "bolt.new",
                     url: "https://bolt.new/",
-                    icon: "fa-solid fa-bolt",
-                    description: "AI代码生成工具",
-                    tags: ["AI", "代码生成"]
+                    icon: "fa-solid fa-bolt"
+                },
+                {
+                    id: "artificialanalysis-ai",
+                    title: "Artificial Analysis",
+                    url: "https://artificialanalysis.ai/",
+                    icon: "fa-solid fa-chart-line"
+                },
+                {
+                    id: "perchai-app",
+                    title: "perchai.app",
+                    url: "https://www.perchai.app/",
+                    icon: "fa-solid fa-crow"
                 }
             ]
         },
-
         {
             id: "social",
-            title: "社交媒体",
+            title: "托管社交",
             icon: "fas fa-users",
-            description: "社交平台和开发工具",
+            description: "托管部署与社交平台",
             links: [
                 {
-                    id: "facebook",
-                    title: "Facebook",
-                    url: "https://www.facebook.com",
-                    icon: "fa-brands fa-facebook",
-                    description: "全球最大的社交网络",
-                    tags: ["社交", "网络"]
+                    id: "wasmer-io",
+                    title: "wasmer边缘计算",
+                    url: "https://wasmer.io/",
+                    icon: "fa-regular fa-cloud"
                 },
                 {
-                    id: "twitter",
-                    title: "Twitter",
-                    url: "https://x.com/",
-                    icon: "fa-brands fa-twitter",
-                    description: "微博社交平台",
-                    tags: ["社交", "微博"]
+                    id: "f-droid-org",
+                    title: "F-Droid",
+                    url: "https://f-droid.org/",
+                    icon: "fa-brands fa-android"
                 },
                 {
-                    id: "twitter-video-download",
+                    id: "twitterxz-com",
                     title: "推特视频下载",
                     url: "https://twitterxz.com/",
-                    icon: "fa-brands fa-x-twitter",
-                    description: "推特视频下载工具",
-                    tags: ["下载", "视频"]
+                    icon: "fa-brands fa-x-twitter"
                 },
                 {
-                    id: "instagram",
+                    id: "instagram-com",
                     title: "Instagram",
                     url: "https://www.instagram.com",
-                    icon: "fa-brands fa-instagram",
-                    description: "图片分享社交平台",
-                    tags: ["社交", "图片"]
+                    icon: "fa-brands fa-instagram"
                 },
                 {
-                    id: "reddit",
+                    id: "render-com",
+                    title: "render",
+                    url: "https://render.com/",
+                    icon: "fa-solid fa-draw-polygon"
+                },
+                {
+                    id: "deno-com",
+                    title: "deno",
+                    url: "https://deno.com/deploy",
+                    icon: "fa-solid fa-d"
+                },
+                {
+                    id: "surge-sh",
+                    title: "surge",
+                    url: "https://surge.sh/",
+                    icon: "fa-brands fa-css"
+                },
+                {
+                    id: "vercel-com",
+                    title: "vercel",
+                    url: "https://vercel.com/",
+                    icon: "fa-solid fa-v"
+                },
+                {
+                    id: "netlify-com",
+                    title: "netlify",
+                    url: "https://www.netlify.com/",
+                    icon: "fa-brands fa-n"
+                },
+                {
+                    id: "cloudzyro-com",
+                    title: "cloudzyro",
+                    url: "https://cloudzyro.com/",
+                    icon: "fa-solid fa-cloud"
+                },
+                {
+                    id: "zh-savefrom-net",
+                    title: "savefrom",
+                    url: "https://zh.savefrom.net/",
+                    icon: "fa-solid fa-share-from-square"
+                },
+                {
+                    id: "apkmirror-com",
+                    title: "apkmirror",
+                    url: "https://www.apkmirror.com/",
+                    icon: "fa-brands fa-android"
+                },
+                {
+                    id: "reddit-com",
                     title: "Reddit",
                     url: "https://www.reddit.com",
-                    icon: "fa-brands fa-reddit",
-                    description: "新闻聚合和讨论网站",
-                    tags: ["社交", "讨论"]
+                    icon: "fa-brands fa-reddit"
                 },
                 {
-                    id: "github",
-                    title: "GitHub",
-                    url: "https://github.com/",
-                    icon: "fa-brands fa-github",
-                    description: "代码托管和协作平台",
-                    tags: ["开发", "代码"]
-                },
-                {
-                    id: "youtube-subtitle-download",
+                    id: "downloadyoutubesubtitles-com",
                     title: "油管字幕下载",
                     url: "https://www.downloadyoutubesubtitles.com/",
-                    icon: "fa-brands fa-youtube",
-                    description: "YouTube字幕下载工具",
-                    tags: ["下载", "字幕"]
+                    icon: "fa-brands fa-youtube"
                 },
                 {
-                    id: "youtube-video-download",
+                    id: "github-com",
+                    title: "GitHub",
+                    url: "https://github.com/",
+                    icon: "fa-brands fa-github"
+                },
+                {
+                    id: "y2mate-com",
                     title: "油管视频下载",
                     url: "https://www.y2mate.com/",
-                    icon: "fa-solid fa-download",
-                    description: "YouTube视频下载工具",
-                    tags: ["下载", "视频"]
+                    icon: "fa-solid fa-download"
                 },
                 {
-                    id: "video-download-iiilab",
+                    id: "youtube-iiilab-com",
                     title: "视频下载",
                     url: "https://youtube.iiilab.com/",
-                    icon: "fa-solid fa-download",
-                    description: "在线视频下载工具",
-                    tags: ["下载", "视频"]
+                    icon: "fa-solid fa-download"
                 },
                 {
-                    id: "suno",
-                    title: "Suno",
+                    id: "suno-com",
+                    title: "suno",
                     url: "https://suno.com/",
-                    icon: "fa-solid fa-music",
-                    description: "AI音乐生成平台",
-                    tags: ["AI", "音乐"]
+                    icon: "fa-solid fa-music"
                 },
                 {
-                    id: "movie-nav",
+                    id: "appwrite-io",
+                    title: "Appwrite",
+                    url: "https://appwrite.io/",
+                    icon: "fa-solid fa-server"
+                },
+                {
+                    id: "neon-tech",
+                    title: "Neon",
+                    url: "https://neon.tech/",
+                    icon: "fa-solid fa-database"
+                },
+                {
+                    id: "turso-tech",
+                    title: "Turso",
+                    url: "https://turso.tech/",
+                    icon: "fa-solid fa-database"
+                },
+                {
+                    id: "movn-ndjp-net",
                     title: "电影导航",
-                    url: "https://mv.186404.xyz/",
-                    icon: "fa-solid fa-tv",
-                    description: "电影和电视剧导航",
-                    tags: ["电影", "娱乐"]
+                    url: "https://movn.ndjp.net/",
+                    icon: "fa-solid fa-tv"
                 },
                 {
-                    id: "vercel",
-                    title: "Vercel",
-                    url: "https://vercel.com/",
-                    icon: "fa-solid fa-v",
-                    description: "前端部署平台",
-                    tags: ["部署", "前端"]
-                },
-                {
-                    id: "netlify",
-                    title: "Netlify",
-                    url: "https://www.netlify.com/",
-                    icon: "fa-brands fa-n",
-                    description: "静态网站部署平台",
-                    tags: ["部署", "静态网站"]
-                },
-                {
-                    id: "railway",
-                    title: "Railway",
-                    url: "https://railway.com/",
-                    icon: "fa-solid fa-archway",
-                    description: "应用部署平台",
-                    tags: ["部署", "应用"]
-                },
-                {
-                    id: "render",
-                    title: "Render",
-                    url: "https://render.com/",
-                    icon: "fa-solid fa-draw-polygon",
-                    description: "云服务和部署平台",
-                    tags: ["部署", "云服务"]
-                },
-                {
-                    id: "deno-deploy",
-                    title: "Deno Deploy",
-                    url: "https://deno.com/deploy",
-                    icon: "fa-solid fa-d",
-                    description: "Deno应用部署平台",
-                    tags: ["部署", "Deno"]
-                },
-                {
-                    id: "savefrom",
-                    title: "SaveFrom",
-                    url: "https://zh.savefrom.net/",
-                    icon: "fa-solid fa-share-from-square",
-                    description: "在线视频下载工具",
-                    tags: ["下载", "视频"]
-                },
-                {
-                    id: "popcorn-video",
-                    title: "爆米花视频",
-                    url: "https://goingbus.com/",
-                    icon: "fa-brands fa-n",
-                    description: "视频播放平台",
-                    tags: ["视频", "播放"]
-                },
+                    id: "zhuiju-ndjp-net",
+                    title: "追剧导航",
+                    url: "https://zhuiju.ndjp.net/",
+                    icon: "fa-solid fa-film"
+                }
             ]
         },
-
         {
             id: "tools",
             title: "实用工具",
             icon: "fas fa-tools",
-            description: "各种在线工具和服务",
+            description: "在线工具、域名与运维服务",
             links: [
                 {
-                    id: "google-translate",
-                    title: "Google翻译",
-                    url: "https://translate.google.com",
-                    icon: "fa-solid fa-language",
-                    description: "在线翻译工具",
-                    tags: ["翻译", "语言"]
+                    id: "mockaddress-com",
+                    title: "MockAddress地址生成器",
+                    url: "https://mockaddress.com/",
+                    icon: "fa-solid fa-location-dot"
                 },
                 {
-                    id: "short-link",
-                    title: "短链",
-                    url: "https://d.186404.xyz/",
-                    icon: "fa-solid fa-link",
-                    description: "URL短链接生成工具",
-                    tags: ["工具", "链接"]
+                    id: "privatebin-net",
+                    title: "privatebin在线粘贴板",
+                    url: "https://privatebin.net/",
+                    icon: "fa-solid fa-link"
                 },
                 {
-                    id: "dynv6",
-                    title: "Dynv6",
+                    id: "dynv6-com",
+                    title: "dynv6",
                     url: "https://dynv6.com/",
-                    icon: "fa-solid fa-network-wired",
-                    description: "动态DNS服务",
-                    tags: ["DNS", "网络"]
+                    icon: "fa-solid fa-network-wired"
                 },
                 {
                     id: "fast-com",
                     title: "网速测试",
                     url: "https://fast.com/",
-                    icon: "fa-solid fa-gauge-high",
-                    description: "网络速度测试",
-                    tags: ["网速", "测试"]
+                    icon: "fa-solid fa-gauge-high"
                 },
                 {
-                    id: "cloudflare",
+                    id: "cloudns-net",
+                    title: "Cloudns",
+                    url: "https://www.cloudns.net/",
+                    icon: "fa-solid fa-cloud"
+                },
+                {
+                    id: "cloudflare-com",
                     title: "Cloudflare",
                     url: "https://www.cloudflare.com/zh-cn/",
-                    icon: "fa-solid fa-shield-halved",
-                    description: "CDN和网络安全服务",
-                    tags: ["CDN", "安全"]
+                    icon: "fa-solid fa-shield-halved"
                 },
                 {
-                    id: "cloudns",
-                    title: "CloudNS",
-                    url: "https://www.cloudns.net/",
-                    icon: "fa-solid fa-cloud",
-                    description: "DNS托管服务",
-                    tags: ["DNS", "托管"]
-                },
-                {
-                    id: "yigepenyou",
+                    id: "ygpy-net",
                     title: "一个朋友",
                     url: "https://ygpy.net/",
-                    icon: "fa-solid fa-user-group",
-                    description: "社交和交友平台",
-                    tags: ["社交", "交友"]
+                    icon: "fa-solid fa-user-group"
                 },
                 {
-                    id: "google-notebook",
+                    id: "notebooklm-google",
                     title: "谷歌笔记",
                     url: "https://notebooklm.google/",
-                    icon: "fa-solid fa-book",
-                    description: "Google笔记和文档工具",
-                    tags: ["笔记", "文档"]
+                    icon: "fa-solid fa-book"
                 },
                 {
-                    id: "temp-email",
-                    title: "临时邮箱",
-                    url: "https://email.ml/",
-                    icon: "fa-solid fa-envelope",
-                    description: "临时邮箱服务",
-                    tags: ["邮箱", "临时"]
+                    id: "unify-light-ai-top",
+                    title: "SenseNova Studio信息图",
+                    url: "https://unify.light-ai.top/",
+                    icon: "fa-solid fa-envelope"
                 },
                 {
-                    id: "ajie-blog",
-                    title: "A姐",
-                    url: "https://www.ahhhhfs.com/",
-                    icon: "fa-solid fa-blog",
-                    description: "A姐科技博客",
-                    tags: ["博客", "科技"]
-                },
-                {
-                    id: "cursor",
-                    title: "Cursor",
-                    url: "https://www.cursor.com/",
-                    icon: "fa-solid fa-i-cursor",
-                    description: "AI代码编辑器",
-                    tags: ["编辑器", "AI"]
-                },
-                {
-                    id: "fontawesome",
-                    title: "FontAwesome图标",
-                    url: "https://fontawesome.com/",
-                    icon: "fa-solid fa-icons",
-                    description: "图标字体库",
-                    tags: ["图标", "字体"]
-                },
-                {
-                    id: "ip-clean-check",
-                    title: "IP清洁度查询",
-                    url: "https://scamalytics.com/",
-                    icon: "fa-solid fa-icons",
-                    description: "IP地址清洁度检测",
-                    tags: ["IP", "检测"]
-                },
-                {
-                    id: "test-ipv6",
-                    title: "Test-IPv6",
-                    url: "https://test-ipv6.com/",
-                    icon: "fa-solid fa-ethernet",
-                    description: "IPv6连接测试",
-                    tags: ["IPv6", "测试"]
-                },
-                {
-                    id: "zone-ip",
-                    title: "Zone/IP",
-                    url: "https://html.zone/ip",
-                    icon: "fa-brands fa-sourcetree",
-                    description: "IP地址查询工具",
-                    tags: ["IP", "查询"]
-                },
-                {
-                    id: "lumiproxy",
-                    title: "免费网络代理",
-                    url: "https://www.lumiproxy.com/zh-hans/online-proxy/proxysite/",
-                    icon: "fa-solid fa-unlock",
-                    description: "免费在线代理服务",
-                    tags: ["代理", "免费"]
-                },
-                {
-                    id: "ipcheck-ing",
-                    title: "IPCheck",
-                    url: "https://ipcheck.ing/",
-                    icon: "fa-solid fa-location-dot",
-                    description: "IP地址检查工具",
-                    tags: ["IP", "检查"]
-                },
-                {
-                    id: "cron-job",
-                    title: "定时任务Cron-Job",
-                    url: "https://console.cron-job.org/",
-                    icon: "fa-solid fa-ethernet",
-                    description: "在线定时任务服务",
-                    tags: ["定时任务", "自动化"]
-                },
-                {
-                    id: "uptimerobot",
-                    title: "UptimeRobot",
-                    url: "https://uptimerobot.com/",
-                    icon: "fa-solid fa-location-dot",
-                    description: "网站监控和告警服务",
-                    tags: ["监控", "告警"]
-                },
-                {
-                    id: "remove-bg",
-                    title: "Remove.bg",
-                    url: "https://www.remove.bg/",
-                    icon: "fa-solid fa-image-portrait",
-                    description: "AI背景移除工具",
-                    tags: ["图片", "背景移除"]
-                },
-                {
-                    id: "tinywow",
-                    title: "TinyWow",
-                    url: "https://tinywow.com/",
-                    icon: "fa-brands fa-free-code-camp",
-                    description: "免费在线工具集合",
-                    tags: ["工具", "免费"]
-                },
-                {
-                    id: "pdf24",
-                    title: "PDF在线工具",
-                    url: "https://tools.pdf24.org/",
-                    icon: "fa-solid fa-file-pdf",
-                    description: "PDF处理工具",
-                    tags: ["PDF", "文档"]
+                    id: "vercel-com-2",
+                    title: "vercel-drop",
+                    url: "https://vercel.com/drop",
+                    icon: "fa-solid fa-droplet"
                 },
                 {
                     id: "ip-sb",
                     title: "IP查询",
                     url: "https://ip.sb/",
-                    icon: "fa-solid fa-location-dot",
-                    description: "IP地址查询工具",
-                    tags: ["IP", "查询"]
+                    icon: "fa-solid fa-location-dot"
                 },
                 {
-                    id: "dns-he",
-                    title: "DNS.HE域名托管",
+                    id: "dns-he-net",
+                    title: "dns.he域名托管",
                     url: "https://dns.he.net/",
-                    icon: "fa-solid fa-network-wired",
-                    description: "DNS域名托管服务",
-                    tags: ["DNS", "域名"]
+                    icon: "fa-solid fa-network-wired"
                 },
                 {
                     id: "site-ac",
                     title: "Site域名转发",
                     url: "https://www.site.ac/",
-                    icon: "fa-solid fa-right-left",
-                    description: "域名转发服务",
-                    tags: ["域名", "转发"]
+                    icon: "fa-solid fa-right-left"
                 },
                 {
-                    id: "z-library",
+                    id: "zh-go-to-library-sk",
                     title: "Z-Library",
                     url: "https://zh.go-to-library.sk/",
-                    icon: "fa-solid fa-book-reader",
-                    description: "电子书库",
-                    tags: ["书库", "电子书"]
+                    icon: "fa-solid fa-book-reader"
                 },
                 {
-                    id: "us-kg-domain",
-                    title: "US.KG域名",
+                    id: "domain-digitalplat-org",
+                    title: "us.kg域名",
                     url: "https://domain.digitalplat.org/",
-                    icon: "fa-solid fa-globe",
-                    description: "免费US.KG域名申请",
-                    tags: ["域名", "免费"]
+                    icon: "fa-solid fa-globe"
                 },
                 {
-                    id: "spaceship-domain",
+                    id: "spaceship-com",
                     title: "Spaceship廉价域名",
                     url: "https://www.spaceship.com/zh/",
-                    icon: "fa-solid fa-rocket",
-                    description: "廉价域名注册服务",
-                    tags: ["域名", "注册"]
+                    icon: "fa-solid fa-rocket"
                 },
                 {
-                    id: "ip-sb",
-                    title: "IP查询",
-                    url: "https://ip.sb/",
-                    icon: "fa-solid fa-location-dot",
-                    description: "IP地址查询工具",
-                    tags: ["IP", "查询"]
+                    id: "namecheap-com",
+                    title: "namecheap廉价域名",
+                    url: "https://www.namecheap.com/",
+                    icon: "fa-solid fa-rocket"
                 },
                 {
-                    id: "picgo",
-                    title: "PicGo",
-                    url: "https://github.com/Molunerfinn/PicGo",
-                    icon: "fa-solid fa-cloud-arrow-up",
-                    description: "图片上传工具",
-                    tags: ["图片", "上传"]
+                    id: "racknerd-com",
+                    title: "racknerd",
+                    url: "https://www.racknerd.com/",
+                    icon: "fa-solid fa-server"
                 },
                 {
-                    id: "cobalt",
-                    title: "Cobalt",
-                    url: "https://cobalt.tools/",
-                    icon: "fa-brands fa-youtube",
-                    description: "视频下载工具",
-                    tags: ["视频", "下载"]
+                    id: "fontawesome-com",
+                    title: "FontAwesome图标",
+                    url: "https://fontawesome.com/",
+                    icon: "fa-solid fa-icons"
                 },
                 {
-                    id: "codeium",
-                    title: "Windsurf",
-                    url: "https://codeium.com/",
-                    icon: "fa-solid fa-code",
-                    description: "AI代码助手",
-                    tags: ["AI", "代码"]
+                    id: "worldvectorlogo-com",
+                    title: "logosvg",
+                    url: "https://worldvectorlogo.com/",
+                    icon: "fa-regular fa-font-awesome"
                 },
                 {
-                    id: "forwardemail",
-                    title: "ForwardEmail",
+                    id: "scamalytics-com",
+                    title: "ip清洁度查询",
+                    url: "https://scamalytics.com/",
+                    icon: "fa-solid fa-icons"
+                },
+                {
+                    id: "test-ipv6-com",
+                    title: "test-ipv6",
+                    url: "https://test-ipv6.com/",
+                    icon: "fa-solid fa-ethernet"
+                },
+                {
+                    id: "html-zone",
+                    title: "zone/ip",
+                    url: "https://html.zone/ip",
+                    icon: "fa-brands fa-sourcetree"
+                },
+                {
+                    id: "lumiproxy-com",
+                    title: "免费网络代理",
+                    url: "https://www.lumiproxy.com/zh-hans/online-proxy/proxysite/",
+                    icon: "fa-solid fa-unlock"
+                },
+                {
+                    id: "ipcheck-ing",
+                    title: "ipcheck",
+                    url: "https://ipcheck.ing/",
+                    icon: "fa-solid fa-location-dot"
+                },
+                {
+                    id: "console-cron-job-org",
+                    title: "定时任务cron-job",
+                    url: "https://console.cron-job.org/",
+                    icon: "fa-solid fa-ethernet"
+                },
+                {
+                    id: "uptimerobot-com",
+                    title: "uptimerobot",
+                    url: "https://uptimerobot.com/",
+                    icon: "fa-solid fa-location-dot"
+                },
+                {
+                    id: "forwardemail-net",
+                    title: "forwardemail",
                     url: "https://forwardemail.net/",
-                    icon: "fa-solid fa-envelopes-bulk",
-                    description: "邮箱转发服务",
-                    tags: ["邮箱", "转发"]
+                    icon: "fa-solid fa-envelopes-bulk"
                 },
                 {
-                    id: "improvmx",
-                    title: "ImprovMX",
+                    id: "improvmx-com",
+                    title: "improvmx",
                     url: "https://improvmx.com/",
-                    icon: "fa-solid fa-envelopes-bulk",
-                    description: "邮箱转发服务",
-                    tags: ["邮箱", "转发"]
+                    icon: "fa-solid fa-envelopes-bulk"
                 },
                 {
-                    id: "github-accelerate",
-                    title: "GitHub文件加速",
-                    url: "https://gb.w404.nyc.mn/",
-                    icon: "fa-brands fa-github",
-                    description: "GitHub文件下载加速",
-                    tags: ["GitHub", "加速"]
+                    id: "objectremover-com",
+                    title: "objectremover去水印",
+                    url: "https://www.objectremover.com/",
+                    icon: "fa-solid fa-object-group"
                 },
                 {
-                    id: "hostry-dns",
-                    title: "HostryDNS域名托管",
+                    id: "hostry-com",
+                    title: "hostryDNS域名托管",
                     url: "https://hostry.com/",
-                    icon: "fa-solid fa-clock-rotate-left",
-                    description: "DNS域名托管服务",
-                    tags: ["DNS", "域名"]
+                    icon: "fa-solid fa-clock-rotate-left"
                 },
                 {
-                    id: "sitelutions-domain",
-                    title: "免费域名 Sitelutions",
+                    id: "sitelutions-com",
+                    title: "免费域名sitelutions",
                     url: "https://www.sitelutions.com/",
-                    icon: "fa-solid fa-sitemap",
-                    description: "免费域名注册服务",
-                    tags: ["域名", "免费"]
+                    icon: "fa-solid fa-sitemap"
                 },
                 {
-                    id: "changeip-domain",
-                    title: "免费域名 ChangeIP",
+                    id: "changeip-com",
+                    title: "免费域名changeip",
                     url: "https://www.changeip.com/",
-                    icon: "fa-solid fa-satellite-dish",
-                    description: "免费域名注册服务",
-                    tags: ["域名", "免费"]
+                    icon: "fa-solid fa-satellite-dish"
                 },
                 {
-                    id: "dnsexit-domain",
-                    title: "免费域名 DNSExit",
+                    id: "dnsexit-com",
+                    title: "免费域名dnsexit",
                     url: "https://dnsexit.com/",
-                    icon: "fa-solid fa-users",
-                    description: "免费域名注册服务",
-                    tags: ["域名", "免费"]
+                    icon: "fa-solid fa-users"
                 },
                 {
-                    id: "gname-domain",
-                    title: "免费域名 GName",
-                    url: "https://www.gname.vip/",
-                    icon: "fa-solid fa-users",
-                    description: "免费域名注册服务",
-                    tags: ["域名", "免费"]
+                    id: "gname-com",
+                    title: "免费域名gname",
+                    url: "https://www.gname.com/",
+                    icon: "fa-solid fa-users"
                 },
                 {
                     id: "nslookup-io",
-                    title: "DNS查找 NSLookup",
+                    title: "DNS查找nslookup",
                     url: "https://www.nslookup.io/",
-                    icon: "fa-solid fa-arrows-rotate",
-                    description: "DNS查询和分析工具",
-                    tags: ["DNS", "查询"]
+                    icon: "fa-solid fa-arrows-rotate"
                 },
                 {
-                    id: "ping0",
-                    title: "Ping0",
+                    id: "ping0-cc",
+                    title: "ping0",
                     url: "https://ping0.cc/",
-                    icon: "fa-solid fa-fingerprint",
-                    description: "网络连接测试工具",
-                    tags: ["网络", "测试"]
+                    icon: "fa-solid fa-fingerprint"
                 },
                 {
-                    id: "l53-domain",
+                    id: "customer-l53-net",
                     title: "L53免费域名",
                     url: "https://customer.l53.net/",
-                    icon: "fa-solid fa-fingerprint",
-                    description: "L53免费域名注册",
-                    tags: ["域名", "免费"]
+                    icon: "fa-solid fa-fingerprint"
                 },
                 {
-                    id: "free-proxy-cz",
-                    title: "Free-Proxy",
-                    url: "http://free-proxy.cz/en/",
-                    icon: "fa-brands fa-internet-explorer",
-                    description: "免费代理服务列表",
-                    tags: ["代理", "免费"]
+                    id: "tools-pdf24-org",
+                    title: "PDF在线工具",
+                    url: "https://tools.pdf24.org/",
+                    icon: "fa-solid fa-file-pdf"
                 },
                 {
-                    id: "croxyproxy",
-                    title: "在线代理 CroxyProxy",
+                    id: "supabase-com",
+                    title: "supabase免费数据库",
+                    url: "https://supabase.com/",
+                    icon: "fa-brands fa-internet-explorer"
+                },
+                {
+                    id: "croxyproxy-rocks",
+                    title: "在线代理croxyproxy",
                     url: "https://www.croxyproxy.rocks/_zh/",
-                    icon: "fa-solid fa-unlock",
-                    description: "在线网页代理服务",
-                    tags: ["代理", "在线"]
+                    icon: "fa-solid fa-unlock"
                 },
                 {
-                    id: "markdown-editor",
+                    id: "doocs-github-io",
                     title: "微信Markdown编辑器",
                     url: "https://doocs.github.io/md/",
-                    icon: "fa-regular fa-edit",
-                    description: "微信公众号Markdown编辑器",
-                    tags: ["Markdown", "编辑器"]
+                    icon: "fa-regular fa-edit"
                 },
                 {
-                    id: "proxysite",
-                    title: "ProxySite",
+                    id: "proxysite-com",
+                    title: "proxysite",
                     url: "https://www.proxysite.com/",
-                    icon: "fa-solid fa-unlock",
-                    description: "在线网页代理服务",
-                    tags: ["代理", "在线"]
+                    icon: "fa-solid fa-unlock"
                 },
                 {
-                    id: "serv00",
-                    title: "Serv00",
+                    id: "serv00-com",
+                    title: "serv00",
                     url: "https://www.serv00.com/",
-                    icon: "fa-solid fa-server",
-                    description: "免费主机托管服务",
-                    tags: ["主机", "免费"]
+                    icon: "fa-solid fa-server"
                 },
                 {
-                    id: "hostuno",
-                    title: "Hostuno",
-                    url: "https://www.hostuno.com/",
-                    icon: "fa-solid fa-server",
-                    description: "免费主机托管服务",
-                    tags: ["主机", "免费"]
+                    id: "colocrossing-com",
+                    title: "colocrossing云服务vps",
+                    url: "https://www.colocrossing.com/",
+                    icon: "fa-solid fa-server"
                 },
                 {
-                    id: "picgo",
+                    id: "github-com-2",
                     title: "PicGo",
                     url: "https://github.com/Molunerfinn/PicGo",
-                    icon: "fa-solid fa-cloud-arrow-up",
-                    description: "图片上传工具",
-                    tags: ["图片", "上传"]
+                    icon: "fa-solid fa-cloud-arrow-up"
                 },
                 {
-                    id: "smms",
+                    id: "smms-app",
                     title: "SM.MS",
                     url: "https://smms.app/",
-                    icon: "fa-solid fa-image",
-                    description: "图片托管服务",
-                    tags: ["图片", "托管"]
+                    icon: "fa-solid fa-image"
                 },
                 {
-                    id: "freeimagehost",
+                    id: "freeimage-host",
                     title: "FreeImageHost",
                     url: "https://freeimage.host/",
-                    icon: "fa-solid fa-photo-film",
-                    description: "免费图片托管服务",
-                    tags: ["图片", "免费"]
+                    icon: "fa-solid fa-photo-film"
                 },
                 {
-                    id: "cobalt",
-                    title: "Cobalt",
+                    id: "cobalt-tools",
+                    title: "cobalt",
                     url: "https://cobalt.tools/",
-                    icon: "fa-brands fa-youtube",
-                    description: "视频下载工具",
-                    tags: ["视频", "下载"]
+                    icon: "fa-brands fa-youtube"
                 },
                 {
-                    id: "paywallbuster",
+                    id: "isthisai-com",
+                    title: "AI鉴定isthisai",
+                    url: "https://isthisai.com/",
+                    icon: "fa-solid fa-code"
+                },
+                {
+                    id: "tinywow-com",
+                    title: "tinywow",
+                    url: "https://tinywow.com/",
+                    icon: "fa-brands fa-free-code-camp"
+                },
+                {
+                    id: "paywallbuster-com",
                     title: "付费墙",
                     url: "https://paywallbuster.com/",
-                    icon: "fa-solid fa-key",
-                    description: "付费墙破解工具",
-                    tags: ["工具", "破解"]
+                    icon: "fa-solid fa-key"
                 },
                 {
-                    id: "paywallhub",
+                    id: "paywallhub-ndjp-net",
                     title: "PaywallHub",
-                    url: "https://g.186404.xyz/wallHub/",
-                    icon: "fa-solid fa-unlock",
-                    description: "付费墙破解工具集合",
-                    tags: ["工具", "破解"]
+                    url: "https://paywallhub.ndjp.net/",
+                    icon: "fa-solid fa-unlock"
                 },
                 {
-                    id: "fmhy",
-                    title: "FMHY",
+                    id: "fmhy-net",
+                    title: "fmhy",
                     url: "https://fmhy.net/",
-                    icon: "fa-regular fa-folder-open",
-                    description: "免费资源大全",
-                    tags: ["资源", "免费"]
+                    icon: "fa-regular fa-folder-open"
                 },
                 {
                     id: "remove-bg",
-                    title: "Remove.bg",
+                    title: "remove",
                     url: "https://www.remove.bg/",
-                    icon: "fa-solid fa-image-portrait",
-                    description: "AI背景移除工具",
-                    tags: ["图片", "背景移除"]
+                    icon: "fa-solid fa-image-portrait"
                 },
                 {
-                    id: "picwish",
-                    title: "PicWish",
+                    id: "picwish-com",
+                    title: "picwish",
                     url: "https://picwish.com/",
-                    icon: "fa-regular fa-image",
-                    description: "图片处理工具",
-                    tags: ["图片", "处理"]
+                    icon: "fa-regular fa-image"
                 },
                 {
-                    id: "tencent-zhiying",
-                    title: "腾讯智影",
-                    url: "https://zenvideo.qq.com/",
-                    icon: "fa-solid fa-video",
-                    description: "腾讯视频制作工具",
-                    tags: ["视频", "制作"]
+                    id: "domain-stackryze-com",
+                    title: "免费域名Stackryze",
+                    url: "https://domain.stackryze.com/",
+                    icon: "fa-solid fa-landmark-dome"
                 },
                 {
-                    id: "hidns-domain",
-                    title: "免费域名 HiDNS",
+                    id: "hidoha-net",
+                    title: "免费域名HiDNS",
                     url: "https://www.hidoha.net/",
-                    icon: "fa-solid fa-fingerprint",
-                    description: "HiDNS免费域名服务",
-                    tags: ["域名", "免费"]
+                    icon: "fa-solid fa-fingerprint"
                 },
                 {
-                    id: "pixabay",
-                    title: "Pixabay",
+                    id: "pixabay-com",
+                    title: "pixabay",
                     url: "https://pixabay.com/",
-                    icon: "fa-brands fa-pix",
-                    description: "免费图片和视频素材",
-                    tags: ["图片", "免费"]
+                    icon: "fa-brands fa-pix"
                 },
                 {
-                    id: "infinityfree",
+                    id: "infinityfree-com",
                     title: "InfinityFree",
                     url: "https://www.infinityfree.com/",
-                    icon: "fa-solid fa-infinity",
-                    description: "免费网站托管服务",
-                    tags: ["托管", "免费"]
+                    icon: "fa-solid fa-infinity"
                 },
                 {
-                    id: "anyvoice",
-                    title: "AnyVoice",
+                    id: "anyvoice-net",
+                    title: "anyvoice",
                     url: "https://anyvoice.net/",
-                    icon: "fa-solid fa-microphone",
-                    description: "AI语音合成工具",
-                    tags: ["AI", "语音"]
+                    icon: "fa-solid fa-microphone"
                 },
                 {
                     id: "fish-audio",
-                    title: "Fish.Audio",
+                    title: "fish.audio",
                     url: "https://fish.audio/",
-                    icon: "fa-solid fa-fish",
-                    description: "AI语音克隆工具",
-                    tags: ["AI", "语音"]
+                    icon: "fa-solid fa-fish"
                 },
                 {
                     id: "noiz-ai",
-                    title: "Noiz.AI",
+                    title: "noizai",
                     url: "https://noiz.ai/",
-                    icon: "fa-solid fa-circle-notch",
-                    description: "AI音频处理工具",
-                    tags: ["AI", "音频"]
+                    icon: "fa-solid fa-circle-notch"
                 },
                 {
-                    id: "hailuo-ai",
-                    title: "海螺AI",
-                    url: "https://hailuoai.video/",
-                    icon: "fa-solid fa-file-audio",
-                    description: "AI视频和音频生成",
-                    tags: ["AI", "视频"]
+                    id: "design-ndjp-net",
+                    title: "Design Radar设计灵感导航",
+                    url: "https://design.ndjp.net/",
+                    icon: "fa-solid fa-file-audio"
                 },
                 {
-                    id: "desec-domain",
-                    title: "deSEC免费域名",
+                    id: "desec-io",
+                    title: "desec免费域名",
                     url: "https://desec.io/",
-                    icon: "fa-solid fa-anchor",
-                    description: "deSEC免费DNS服务",
-                    tags: ["域名", "DNS"]
+                    icon: "fa-solid fa-anchor"
                 },
                 {
                     id: "lovable-dev",
-                    title: "Lovable网站生成",
+                    title: "lovable网站生成",
                     url: "https://lovable.dev/",
-                    icon: "fa-solid fa-shield-heart",
-                    description: "AI网站生成工具",
-                    tags: ["AI", "网站生成"]
+                    icon: "fa-solid fa-shield-heart"
                 },
                 {
-                    id: "netlib-domain",
-                    title: "Netlib免费域名",
-                    url: "https://www.netlib.re/",
-                    icon: "fa-solid fa-globe",
-                    description: "Netlib免费域名注册",
-                    tags: ["域名", "免费"]
+                    id: "ndjp-net",
+                    title: "ndjp免费域名",
+                    url: "https://ndjp.net/",
+                    icon: "fa-solid fa-globe"
                 },
                 {
-                    id: "zone-id-domain",
-                    title: "Zone免费域名",
+                    id: "dynu-com",
+                    title: "dynu免费域名",
+                    url: "https://www.dynu.com/",
+                    icon: "fa-solid fa-globe"
+                },
+                {
+                    id: "zone-id",
+                    title: "zone免费域名",
                     url: "https://zone.id/",
-                    icon: "fa-solid fa-id-card-clip",
-                    description: "Zone.ID免费域名注册",
-                    tags: ["域名", "免费"]
+                    icon: "fa-solid fa-id-card-clip"
                 },
                 {
-                    id: "x10hosting",
+                    id: "my-dnshe-com",
+                    title: "dnshe免费域名",
+                    url: "https://my.dnshe.com/",
+                    icon: "fa-solid fa-id-card-clip"
+                },
+                {
+                    id: "x10hosting-com",
                     title: "x10hosting免费托管",
                     url: "https://x10hosting.com/",
-                    icon: "fa-solid fa-ghost",
-                    description: "免费网站托管服务",
-                    tags: ["托管", "免费"]
+                    icon: "fa-solid fa-ghost"
                 },
                 {
-                    id: "nodeloc",
-                    title: "NodeLoc社区",
+                    id: "nodeloc-com",
+                    title: "nodeloc社区",
                     url: "https://www.nodeloc.com/",
-                    icon: "fa-brands fa-hashnode",
-                    description: "主机和服务器社区",
-                    tags: ["社区", "主机"]
+                    icon: "fa-brands fa-hashnode"
                 },
                 {
                     id: "same-new",
-                    title: "Same复制网站",
+                    title: "same复制网站",
                     url: "https://same.new/",
-                    icon: "fa-solid fa-copy",
-                    description: "网站复制和克隆工具",
-                    tags: ["克隆", "网站"]
+                    icon: "fa-solid fa-copy"
                 },
                 {
-                    id: "claw-cloud",
-                    title: "Claw容器",
-                    url: "https://claw.cloud/",
-                    icon: "fa-solid fa-cloud",
-                    description: "容器化部署平台",
-                    tags: ["容器", "部署"]
+                    id: "katabump-com",
+                    title: "KataBump免费域名",
+                    url: "https://katabump.com/",
+                    icon: "fa-solid fa-cloud"
                 },
                 {
-                    id: "subeasy",
-                    title: "SubEasy字幕",
+                    id: "zoneabc-net",
+                    title: "免费域名zoneabc",
+                    url: "https://zoneabc.net/",
+                    icon: "fa-solid fa-cloud"
+                },
+                {
+                    id: "nic-gv-uy",
+                    title: "免费域名gv.uy",
+                    url: "https://nic.gv.uy/",
+                    icon: "fa-solid fa-cloud"
+                },
+                {
+                    id: "isroot-in",
+                    title: "免费域名isroot",
+                    url: "https://isroot.in/",
+                    icon: "fa-solid fa-cloud"
+                },
+                {
+                    id: "subeasy-ai",
+                    title: "subeasy字幕",
                     url: "https://www.subeasy.ai/zh-CN",
-                    icon: "fa-solid fa-closed-captioning",
-                    description: "AI视频字幕生成",
-                    tags: ["AI", "字幕"]
+                    icon: "fa-solid fa-closed-captioning"
                 },
                 {
-                    id: "cardify",
+                    id: "cardify-godsbee-com",
                     title: "知识卡片",
                     url: "https://cardify.godsbee.com/",
-                    icon: "fa-solid fa-credit-card",
-                    description: "知识卡片制作工具",
-                    tags: ["知识", "卡片"]
+                    icon: "fa-solid fa-credit-card"
                 },
                 {
-                    id: "webhostmost",
-                    title: "WebHostMost网站托管",
+                    id: "webhostmost-com",
+                    title: "webhostmost网站托管",
                     url: "https://www.webhostmost.com/",
-                    icon: "fa-solid fa-web-awesome",
-                    description: "网站托管服务",
-                    tags: ["托管", "网站"]
+                    icon: "fa-solid fa-web-awesome"
                 },
                 {
-                    id: "edgeone",
-                    title: "腾讯EdgeOne",
+                    id: "edgeone-ai",
+                    title: "edgeone",
                     url: "https://edgeone.ai/",
-                    icon: "fa-solid fa-dice-one",
-                    description: "腾讯边缘计算平台",
-                    tags: ["云计算", "边缘"]
+                    icon: "fa-brands fa-edge"
                 },
                 {
-                    id: "stormkit",
+                    id: "cyberpanel-net",
+                    title: "cyberpanel免费VPN",
+                    url: "https://cyberpanel.net/",
+                    icon: "fa-solid fa-graduation-cap"
+                },
+                {
+                    id: "stormkit-io",
                     title: "Stormkit",
                     url: "https://www.stormkit.io/",
-                    icon: "fa-solid fa-cloud",
-                    description: "前端部署和托管平台",
-                    tags: ["部署", "前端"]
+                    icon: "fa-solid fa-cloud"
                 },
+                {
+                    id: "1984-hosting",
+                    title: "1984免费DNS托管",
+                    url: "https://1984.hosting/",
+                    icon: "fa-solid fa-network-wired"
+                },
+                {
+                    id: "dash-int-yt",
+                    title: "int.yt免费域名",
+                    url: "https://dash.int.yt/",
+                    icon: "fa-solid fa-globe"
+                },
+                {
+                    id: "nssnap-com",
+                    title: "nssnap免费域名",
+                    url: "https://nssnap.com/",
+                    icon: "fa-solid fa-globe"
+                },
+                {
+                    id: "devs-surf",
+                    title: "devs.surf 免费域名",
+                    url: "https://devs.surf/",
+                    icon: "fa-solid fa-water"
+                },
+                {
+                    id: "devs-li",
+                    title: "devs.li 免费域名",
+                    url: "https://devs.li/",
+                    icon: "fa-solid fa-code"
+                },
+                {
+                    id: "ipv64-net",
+                    title: "ipv64",
+                    url: "https://ipv64.net/",
+                    icon: "fa-solid fa-server"
+                },
+                {
+                    id: "nic-fj-kg",
+                    title: "Zerexa Domains 免费域名",
+                    url: "https://nic.fj.kg/",
+                    icon: "fa-solid fa-globe"
+                },
+                {
+                    id: "pinme-eth-limo",
+                    title: "PinMe",
+                    url: "https://pinme.eth.limo/",
+                    icon: "fa-solid fa-thumbtack"
+                },
+                {
+                    id: "sms24-me",
+                    title: "sms24免费接码",
+                    url: "https://sms24.me/",
+                    icon: "fa-solid fa-comment-sms"
+                },
+                {
+                    id: "openverse-org",
+                    title: "Openverse",
+                    url: "https://openverse.org/",
+                    icon: "fa-brands fa-creative-commons"
+                },
+                {
+                    id: "hackerbooks-qiaomu-ai",
+                    title: "黑客书架",
+                    url: "https://hackerbooks.qiaomu.ai/",
+                    icon: "fa-solid fa-book-bookmark"
+                }
             ]
         },
-
         {
             id: "tech-news",
             title: "科技资讯",
             icon: "fas fa-newspaper",
-            description: "科技新闻和资讯网站",
+            description: "科技新闻与技术资讯",
             links: [
                 {
-                    id: "techcrunch",
+                    id: "techcrunch-com",
                     title: "TechCrunch",
                     url: "https://www.techcrunch.com",
-                    icon: "fa-solid fa-newspaper",
-                    description: "科技创业资讯",
-                    tags: ["科技", "创业"]
+                    icon: "fa-solid fa-newspaper"
                 },
                 {
-                    id: "wired",
+                    id: "wired-com",
                     title: "Wired",
                     url: "https://www.wired.com",
-                    icon: "fa-solid fa-bolt",
-                    description: "科技文化杂志",
-                    tags: ["科技", "文化"]
+                    icon: "fa-solid fa-bolt"
                 },
                 {
-                    id: "the-verge",
+                    id: "theverge-com",
                     title: "The Verge",
                     url: "https://www.theverge.com",
-                    icon: "fa-solid fa-laptop",
-                    description: "科技新闻网站",
-                    tags: ["科技", "新闻"]
+                    icon: "fa-solid fa-laptop"
                 },
                 {
-                    id: "ars-technica",
+                    id: "arstechnica-com",
                     title: "Ars Technica",
                     url: "https://arstechnica.com",
-                    icon: "fa-solid fa-rocket",
-                    description: "技术新闻和分析",
-                    tags: ["技术", "分析"]
+                    icon: "fa-solid fa-rocket"
                 },
                 {
-                    id: "engadget",
+                    id: "engadget-com",
                     title: "Engadget",
                     url: "https://www.engadget.com",
-                    icon: "fa-solid fa-mobile-screen",
-                    description: "消费电子资讯",
-                    tags: ["电子", "消费"]
+                    icon: "fa-solid fa-mobile-screen"
                 },
                 {
-                    id: "scitechdaily",
+                    id: "scitechdaily-com",
                     title: "科技日报",
                     url: "https://scitechdaily.com/",
-                    icon: "fa-solid fa-microscope",
-                    description: "科学技术新闻",
-                    tags: ["科学", "技术"]
+                    icon: "fa-solid fa-microscope"
                 },
                 {
-                    id: "techradar",
+                    id: "techradar-com",
                     title: "TechRadar",
                     url: "https://techradar.com",
-                    icon: "fa-solid fa-satellite",
-                    description: "科技产品评测",
-                    tags: ["科技", "评测"]
+                    icon: "fa-solid fa-satellite"
                 },
                 {
-                    id: "cnbeta",
-                    title: "CNBeta",
+                    id: "opensourceprojects-dev",
+                    title: "精彩的开源项目",
+                    url: "https://www.opensourceprojects.dev/",
+                    icon: "fa-regular fa-folder-open"
+                },
+                {
+                    id: "cnbeta-com-tw",
+                    title: "cnbeta",
                     url: "https://www.cnbeta.com.tw/",
-                    icon: "fa-solid fa-circle-info",
-                    description: "中文科技资讯",
-                    tags: ["科技", "中文"]
+                    icon: "fa-solid fa-circle-info"
                 }
             ]
         },
-
         {
             id: "cloud-storage",
             title: "云存储",
             icon: "fas fa-cloud",
-            description: "云存储和文件分享服务",
+            description: "云存储与文件分享",
             links: [
                 {
-                    id: "google-drive",
-                    title: "Google Drive",
-                    url: "https://drive.google.com",
-                    icon: "fa-brands fa-google-drive",
-                    description: "Google云存储服务",
-                    tags: ["云存储", "Google"]
-                },
-                {
-                    id: "onedrive",
-                    title: "OneDrive",
-                    url: "https://onedrive.live.com",
-                    icon: "fa-brands fa-microsoft",
-                    description: "微软云存储服务",
-                    tags: ["云存储", "微软"]
-                },
-                {
-                    id: "dropbox",
+                    id: "dropbox-com",
                     title: "Dropbox",
                     url: "https://www.dropbox.com",
-                    icon: "fa-brands fa-dropbox",
-                    description: "文件同步和分享",
-                    tags: ["云存储", "同步"]
+                    icon: "fa-brands fa-dropbox"
                 },
                 {
-                    id: "box",
+                    id: "drive-google-com",
+                    title: "Google Drive",
+                    url: "https://drive.google.com",
+                    icon: "fa-brands fa-google-drive"
+                },
+                {
+                    id: "onedrive-live-com",
+                    title: "OneDrive",
+                    url: "https://onedrive.live.com",
+                    icon: "fa-brands fa-microsoft"
+                },
+                {
+                    id: "box-com",
                     title: "Box",
                     url: "https://www.box.com",
-                    icon: "fa-solid fa-box",
-                    description: "企业云存储",
-                    tags: ["云存储", "企业"]
+                    icon: "fa-solid fa-box"
                 },
                 {
-                    id: "mediafire",
+                    id: "mediafire-com",
                     title: "MediaFire",
                     url: "https://www.mediafire.com",
-                    icon: "fa-solid fa-file",
-                    description: "文件托管服务",
-                    tags: ["文件", "托管"]
+                    icon: "fa-solid fa-file"
                 },
                 {
-                    id: "mega",
+                    id: "mega-nz",
                     title: "MEGA",
                     url: "https://mega.nz",
-                    icon: "fa-solid fa-cloud-arrow-up",
-                    description: "加密云存储",
-                    tags: ["云存储", "加密"]
+                    icon: "fa-solid fa-cloud-arrow-up"
                 },
                 {
-                    id: "pikpak",
+                    id: "mypikpak-com",
                     title: "PikPak",
                     url: "https://mypikpak.com/",
-                    icon: "fa-solid fa-cloud",
-                    description: "云存储和下载",
-                    tags: ["云存储", "下载"]
+                    icon: "fa-solid fa-cloud"
                 }
             ]
         },
-
         {
             id: "email",
             title: "电子邮箱",
             icon: "fas fa-envelope",
-            description: "电子邮件服务",
+            description: "邮箱服务与隐私邮箱",
             links: [
                 {
-                    id: "gmail",
-                    title: "Gmail",
-                    url: "https://mail.google.com",
-                    icon: "fa-solid fa-envelope",
-                    description: "Google邮箱服务",
-                    tags: ["邮箱", "Google"]
+                    id: "zoho-com",
+                    title: "Zoho Mail企业邮箱",
+                    url: "https://www.zoho.com/mail/",
+                    icon: "fa-solid fa-envelope"
                 },
                 {
-                    id: "outlook",
+                    id: "outlook-live-com",
                     title: "Outlook",
                     url: "https://outlook.live.com",
-                    icon: "fa-brands fa-microsoft",
-                    description: "微软邮箱服务",
-                    tags: ["邮箱", "微软"]
-                },
-                {
-                    id: "protonmail",
-                    title: "ProtonMail",
-                    url: "https://www.protonmail.com",
-                    icon: "fa-solid fa-shield-halved",
-                    description: "加密邮箱服务",
-                    tags: ["邮箱", "加密"]
-                },
-                {
-                    id: "qq-mail",
-                    title: "QQ邮箱",
-                    url: "https://mail.qq.com",
-                    icon: "fa-brands fa-qq",
-                    description: "腾讯邮箱服务",
-                    tags: ["邮箱", "腾讯"]
+                    icon: "fa-brands fa-microsoft"
                 },
                 {
                     id: "cock-li",
-                    title: "Cock邮箱",
+                    title: "cock邮箱",
                     url: "https://cock.li/",
-                    icon: "fa-solid fa-envelope-open",
-                    description: "匿名邮箱服务",
-                    tags: ["邮箱", "匿名"]
+                    icon: "fa-solid fa-envelope-open"
                 },
                 {
-                    id: "disroot",
-                    title: "Disroot邮箱",
+                    id: "disroot-org",
+                    title: "disroot邮箱",
                     url: "https://disroot.org/",
-                    icon: "fa-solid fa-envelope-circle-check",
-                    description: "隐私友好邮箱",
-                    tags: ["邮箱", "隐私"]
+                    icon: "fa-solid fa-envelope-circle-check"
                 },
                 {
-                    id: "librem",
-                    title: "Librem邮箱",
-                    url: "https://librem.one/",
-                    icon: "fa-solid fa-at",
-                    description: "自由软件邮箱",
-                    tags: ["邮箱", "自由软件"]
+                    id: "protonmail-com",
+                    title: "ProtonMail",
+                    url: "https://www.protonmail.com",
+                    icon: "fa-solid fa-shield-halved"
                 },
                 {
-                    id: "edumail",
+                    id: "tinkmail-me",
+                    title: "tinkmail企业邮箱",
+                    url: "https://tinkmail.me/",
+                    icon: "fa-brands fa-qq"
+                },
+                {
+                    id: "em-bjedu-tech",
+                    title: "Cloudflare临时邮件",
+                    url: "https://em.bjedu.tech/",
+                    icon: "fa-solid fa-at"
+                },
+                {
+                    id: "edumail-su",
                     title: "临时教育邮箱",
                     url: "https://edumail.su/",
-                    icon: "fa-solid fa-envelopes-bulk",
-                    description: "临时教育邮箱服务",
-                    tags: ["邮箱", "临时", "教育"]
+                    icon: "fa-solid fa-envelopes-bulk"
                 }
             ]
         }
     ]
 };
-
-// 统计信息
-navigationData.metadata.totalLinks = navigationData.categories.reduce((total, category) => {
-    return total + category.links.length;
-}, 0);
-
-// 获取所有标签
-function getAllTags() {
-    const tags = new Set();
-    navigationData.categories.forEach(category => {
-        category.links.forEach(link => {
-            link.tags.forEach(tag => tags.add(tag));
-        });
-    });
-    return Array.from(tags).sort();
-}
 
 // 获取热门链接（可以根据点击次数等指标）
 function getPopularLinks(limit = 10) {
@@ -1419,7 +1262,6 @@ function getPopularLinks(limit = 10) {
 // 导出到全局作用域
 if (typeof window !== 'undefined') {
     window.navigationData = navigationData;
-    window.getAllTags = getAllTags;
     window.getPopularLinks = getPopularLinks;
 }
 
@@ -1427,7 +1269,6 @@ if (typeof window !== 'undefined') {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         navigationData,
-        getAllTags,
         getPopularLinks
     };
 }
