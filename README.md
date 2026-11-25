@@ -18,7 +18,7 @@
 
 ### 📱 技术特点
 - **纯原生技术** - HTML5 + CSS3 + Vanilla JavaScript
-- **Tailwind CSS** - 通过 CDN 引入的原子化 CSS 框架
+- **Tailwind CSS** - 构建期编译为静态 CSS（`npm run build:css`），不再运行 CDN 编译器
 - **模块化设计** - 功能模块化，易于维护和扩展
 - **性能优化** - 轻量级，快速加载
 
@@ -51,7 +51,15 @@ git clone https://github.com/your-repo/webnav-hub.git
 cd webnav-hub
 ```
 
-### 2. 本地运行
+### 2. 安装依赖并生成样式
+```bash
+npm install
+npm run build:css   # 把 Tailwind 编译到 css/tailwind.css
+```
+
+修改 `index.html` 中使用的 Tailwind 类名后需要重新执行一次。
+
+### 3. 本地运行
 直接在浏览器中打开 `index.html` 文件即可。
 
 或者使用本地服务器：
@@ -66,12 +74,12 @@ npx serve .
 # 右键 -> Open with Live Server
 ```
 
-### 3. 访问地址
+### 4. 访问地址
 ```
 http://localhost:8000
 ```
 
-### 4. 部署上线
+### 5. 部署上线
 支持多种免费部署平台：
 - **GitHub Pages** - 适合开源项目
 - **Cloudflare Pages** - 全球CDN加速

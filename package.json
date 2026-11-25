@@ -1,0 +1,12 @@
+{
+  "name": "webnav-hub",
+  "version": "2.2.0",
+  "private": true,
+  "description": "WebNav Hub 网址导航站（纯静态）",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i css/tailwind.src.css -o css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

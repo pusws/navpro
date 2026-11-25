@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
   <meta name="description" content="WebNav Hub - 现代化的网址导航站，融合Neumorphism设计风格" />
   <meta name="keywords" content="网址导航,AI工具,开发工具,在线工具,导航站" />
   <meta name="author" content="WebNav Hub" />
@@ -22,41 +24,15 @@
   <title>WebNav Hub - 现代化网址导航站</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          screens: {
-            'xs': '360px',
-          },
-          colors: {
-            primary: '#ff9000',
-            'primary-hover': '#e67e22',
-            'primary-light': '#ffb84d',
-            'primary-dark': '#cc7400',
-          },
-          fontFamily: {
-            'sans': ['Inter', 'Arial', 'sans-serif'],
-          },
-          spacing: {
-            '18': '4.5rem',
-            '88': '22rem',
-          },
-          maxWidth: {
-            '8xl': '88rem',
-          }
-        }
-      },
-      darkMode: 'class'
-    }
-  </script>
+  <!-- Tailwind：构建期编译为静态 CSS（npm run build:css） -->
+  <link rel="stylesheet" href="css/tailwind.css" />
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha384-nRgPTkuX86pH8yjPJUAFuASXQSSl2/bBUiNV47vSYpKFxHJhbcrGnmlYpYJMeD7a" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -208,10 +184,10 @@
   </div>
 
   <!-- JavaScript 模块 -->
-  <script src="js/theme.js"></script>
-  <script src="js/navigation.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="data/links.js"></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="data/links.js" defer></script>
 
   <!-- 主脚本 -->
   <script>

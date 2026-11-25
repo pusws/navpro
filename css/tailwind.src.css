@@ -1,0 +1,4 @@
+/* Tailwind 入口文件：npm run build:css 生成 css/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
